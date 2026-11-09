@@ -1,0 +1,102 @@
+/* B01–B08: approved 2026-11-03 export, rendered with live schedules and proposals. */
+.approved-b-header{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;align-items:center;min-height:78px;padding:18px 16px 14px;border-bottom:1px solid var(--duet-rule);background:#000}
+.approved-b-header h2{margin:0;text-align:center;font:24px/1.2 Georgia,serif;color:var(--duet-gold)}
+.approved-b-header .approved-b-back,.production-schedule-dialog .schedule-toolbar .approved-b-back{display:grid;place-items:center;border:0!important;background:transparent!important;color:var(--duet-gold);width:36px;height:40px;min-height:40px;padding:6px}
+.approved-b-back svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.production-calendar .approved-schedule-dialog{position:fixed;inset:0;width:min(100%,390px);height:100dvh;max-height:100dvh;max-width:100vw;margin:0 auto;padding:0;border:0;border-radius:0;background:#000;color:var(--duet-text);overflow-y:auto;overscroll-behavior:contain}
+.production-calendar .approved-schedule-dialog[open]{display:flex;flex-direction:column;gap:0}
+.approved-schedule-dialog::backdrop{background:#000c}
+.approved-schedule-body{flex:1;padding:26px 20px 22px;min-height:0}
+.approved-agenda-month{display:grid;grid-template-columns:32px minmax(0,1fr) 32px;align-items:center;gap:4px}
+.approved-agenda-month h3{font:23px/1.2 Georgia,serif;margin:0;text-align:center}
+.production-calendar .approved-agenda-month button{font-size:24px;background:transparent;border:0;padding:0;color:var(--duet-gold)}
+.approved-agenda-date{display:block;position:relative;width:fit-content;max-width:100%;margin:15px 0 24px;color:#a99b88;font-size:13px}
+.approved-agenda-date input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.approved-agenda h4{margin:0}
+.approved-agenda ul{margin:0;padding:0;list-style:none}
+.production-calendar .approved-agenda li{padding:0;border:0}
+.approved-agenda-row{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center;min-height:64px;padding:14px 0;border-bottom:1px solid var(--duet-rule);font-size:14px;list-style:none}
+.approved-agenda-row::-webkit-details-marker{display:none}
+.approved-agenda-row time{color:var(--duet-gold);font-variant-numeric:tabular-nums;font-size:12px}
+.approved-agenda-row strong{font-weight:400;overflow-wrap:anywhere}
+.approved-agenda-row>span{color:var(--duet-gold);font-size:11px}
+.approved-agenda-row .agenda-owner-self{color:#dcb0a3}
+.approved-agenda-row.agenda-free-row{color:var(--duet-gold)}
+.approved-agenda-detail{padding:0 0 14px;color:#b8aa93;font-size:12px;line-height:1.6}
+.approved-agenda-empty{color:#a99b88;font-size:13px}
+.approved-shared-moments,.approved-weekly-date{padding:15px 0;border-bottom:1px solid var(--duet-rule);color:#b7aa91;font-size:12px}
+.approved-shared-moments summary,.approved-weekly-date summary{color:var(--duet-gold);font-size:13px;cursor:pointer}
+.approved-weekly-date>button{margin-right:7px}
+.approved-schedule-body .calendar-tools-content{border:0;border-radius:0;background:transparent;padding:0;margin:0}
+.production-calendar .approved-agenda-refresh{font-size:11px;margin-top:18px;border:0;padding:5px 0;min-height:28px;color:#a99b88}
+.approved-b-footer{margin-top:auto;display:flex;gap:12px;padding:20px 20px max(22px,env(safe-area-inset-bottom));background:#000}
+.approved-b-footer>button,.production-calendar .approved-b-footer>button{flex:1;min-height:44px;padding:12px 16px;border:1px solid var(--duet-rule);border-radius:8px;background:transparent;color:var(--duet-gold);font-size:15px}
+.approved-agenda-form{min-height:100%;display:flex;flex-direction:column}
+.production-schedule-dialog .schedule-toolbar.approved-b-header{grid-template-columns:40px minmax(0,1fr) 40px;padding:18px 16px 14px;min-height:78px;position:relative}
+.approved-agenda-form .schedule-body{padding:24px 20px;flex:1}
+.approved-agenda-form .schedule-group{border:0;border-radius:0;background:transparent;margin:0}
+.approved-agenda-form .schedule-title{display:grid;gap:10px;padding:0 0 26px}
+.approved-agenda-form .schedule-title>span{font:25px/1.2 Georgia,serif;color:var(--duet-gold)}
+.approved-agenda-form .schedule-title input{font-size:15px;padding:8px 0;border:0;border-bottom:1px solid var(--duet-rule);border-radius:0}
+.approved-agenda-form .schedule-row{padding:16px 0;min-height:64px}
+.approved-agenda-form .schedule-row>span:first-child{color:var(--duet-gold)}
+.approved-agenda-form .schedule-row-value{font-size:12px;color:#d2c6b2}
+.approved-agenda-form .schedule-row[hidden]{display:none}
+.approved-agenda-form .schedule-hint{font-size:10px;margin:8px 0 20px}
+.approved-agenda-form .schedule-note{padding:16px 0;border-top:1px solid var(--duet-rule);color:var(--duet-gold)}
+.approved-agenda-form .schedule-note textarea{font-size:14px;min-height:95px}
+.schedule-compact-picker>.approved-picker-kicker{font-size:10px;letter-spacing:.15em;margin:0 0 8px;color:var(--duet-gold)}
+.schedule-compact-picker>h3{margin-bottom:15px;font-size:24px}
+.approved-date-planner{display:flex;flex-direction:column;gap:18px}
+.approved-date-planner>.approved-date-create{order:-1;display:grid;gap:18px}
+.approved-b-kicker{color:var(--duet-gold);font-size:10px;line-height:1.5;letter-spacing:.15em;margin:0;text-transform:uppercase}
+.approved-date-create>h2,.approved-date-result>h2{font:28px/1.25 Georgia,serif;color:var(--duet-gold);margin:0 0 2px;overflow-wrap:anywhere}
+.approved-date-fields{padding:17px;border:1px solid var(--duet-rule);border-radius:12px;background:#100d0a;display:grid;gap:17px}
+.approved-date-fields label{font-size:12px}
+.approved-date-fields textarea{min-height:48px;height:48px;resize:vertical}
+.approved-date-create>.production-primary{min-height:44px;font-size:15px}
+.approved-date-preferences{font-size:12px}
+.approved-date-options{font-size:12px;color:#b7aa91;margin-top:4px}
+.approved-date-options>summary,.approved-proposal-list>summary{color:var(--duet-gold);padding:8px 0;cursor:pointer}
+.approved-date-options>label{margin-top:12px}
+.approved-date-options>.approved-wish-choice{display:flex;align-items:center;gap:9px}
+.approved-date-options>.approved-wish-choice input{width:16px;height:16px;flex:none;accent-color:var(--duet-wine)}
+.approved-proposal-list{font-size:12px;border-top:1px solid var(--duet-rule);padding-top:8px}
+.approved-proposal-list>button{display:flex;width:100%;justify-content:space-between;gap:12px;text-align:left;margin-top:9px;font-size:12px}
+.approved-proposal-list>button>span{color:#a99b88;font-size:11px;flex:none}
+.approved-date-result{display:grid;gap:20px}
+.approved-date-plan{margin:0;color:#d1c6b7;white-space:pre-wrap;font-size:15px;line-height:1.6}
+.approved-confirmation-rows{border-top:1px solid var(--duet-rule)}
+.approved-confirmation-rows>div{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:center;min-height:64px;border-bottom:1px solid var(--duet-rule);font-size:14px}
+.approved-confirmation-rows b{color:var(--duet-gold);font-weight:500}
+.approved-confirmation-rows small{font-size:11px;color:var(--duet-gold)}
+.approved-date-result>.approved-date-options{margin-top:18px}
+.approved-date-result>.approved-date-options button{font-size:12px;margin:5px 6px 0 0}
+.approved-date-state{font-size:12px;color:var(--duet-gold);margin:0}
+.production-pet-status-list.approved-pet-status-cards{grid-template-columns:1fr;gap:10px}
+.production-pets .approved-pet-status-card{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--duet-rule);border-radius:10px;background:#100d0a;color:var(--duet-gold);text-align:left}
+.approved-pet-status-card>img{width:76px;height:92px;object-fit:contain;flex:none}
+.approved-pet-fields{display:grid;gap:10px;flex:1;min-width:0}
+.approved-pet-fields>strong{font-size:15px;font-weight:500}
+.approved-pet-fields>span{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center}
+.approved-pet-fields small{font-size:11px;color:#a99b88}
+.approved-pet-fields b{font-size:13px;font-weight:400;color:#e2d7c7}
+@media(max-width:350px){.approved-schedule-body,.approved-agenda-form .schedule-body{padding-inline:16px}.approved-agenda-row{gap:8px;grid-template-columns:46px minmax(0,1fr) auto}.approved-date-fields{padding:13px}.approved-date-create>h2,.approved-date-result>h2{font-size:25px}}
+
+.schedule-picker-wheels .approved-picker-wheel{display:grid;gap:8px;margin:0;text-align:center}.approved-picker-wheel>span{color:#a99b88;font-size:10px}.schedule-picker-wheels .approved-picker-wheel select{width:auto;max-width:8ch;padding:0 .6ch}.schedule-picker-wheels>span{align-self:center;margin-top:17px}
+
+/* F03: real, author-only memory deletion. */
+.approved-memory-entries{padding:0;list-style:none}
+.approved-memory-entries>li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--duet-rule)}
+.approved-memory-entries>li>div{flex:1;min-width:0;overflow-wrap:anywhere}
+.production-calendar .approved-memory-entries .approved-memory-remove{flex:none;min-height:30px;padding:5px 0;border:0;border-radius:0;background:transparent;color:var(--duet-gold);text-decoration:underline;font-size:11px}
+.approved-memory-feedback{color:var(--duet-gold);font-size:12px}
+.approved-memory-confirm{width:min(340px,calc(100vw - 32px));max-width:100%;padding:24px;border:1px solid #6b5434;border-radius:13px;background:#14110e;color:#f4eee5}
+.approved-memory-confirm::backdrop{background:#000a}
+.approved-memory-confirm h2{font:23px/1.3 Georgia,serif;color:var(--duet-gold);margin:0 0 14px}
+.approved-memory-confirm p{font-size:13px;line-height:1.6;color:#aa9b87;overflow-wrap:anywhere}
+.approved-memory-confirm .approved-memory-name{color:#f4eee5}
+.approved-memory-confirm [role=alert]{color:#e6b181}
+.approved-memory-confirm>div{display:flex;gap:10px;margin-top:20px}
+.approved-memory-confirm button{flex:1;min-height:42px;border:1px solid var(--duet-gold);border-radius:7px;background:transparent;color:var(--duet-gold);padding:9px 12px;font-size:13px}
+.approved-memory-confirm .approved-memory-confirm-delete{background:var(--duet-wine);color:#fff}

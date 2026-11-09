@@ -1,0 +1,115 @@
+/* Final Chrome review export, 2026-11-03. Responsive equivalents of saved geometry. */
+.approved-ef.auth-entry .onboarding-form{margin-top:0}
+.approved-ef .onboarding-foot>p{display:inline;margin:0 4px 0 0}
+.approved-ef .onboarding-invite-entry{display:inline}
+.approved-ef .onboarding-invite-entry>summary{display:inline;list-style:none;padding:0;text-decoration:underline;font-size:11px}
+.approved-ef .onboarding-invite-entry>summary::-webkit-details-marker{display:none}
+.approved-ef .onboarding-invite-entry[open]>form{display:grid;text-align:left;margin-top:16px}
+.approved-agenda-form .schedule-body>.approved-b-kicker{margin:0 0 18px}
+.approved-agenda-form .schedule-title>span{font:12px/1.45 -apple-system,BlinkMacSystemFont,sans-serif}
+.approved-agenda-form .schedule-title{gap:8px;padding-bottom:16px}
+.approved-agenda-form .schedule-title input{border:1px solid var(--duet-rule);border-radius:7px;padding:11px;background:#14110e}
+.approved-agenda-form .schedule-row{min-height:58px;padding:14px 0}
+.approved-agenda-form .schedule-row-value{display:flex;align-items:center;gap:5px}
+.approved-agenda-form .schedule-row-value::after{content:'›';font-size:20px;color:var(--duet-gold);margin-left:5px}
+.approved-story-photo-grid,.approved-story-photo-grid>div{height:428px;max-height:52dvh}
+.approved-story-content .approved-story-caption{margin-top:16px}
+.approved-story-summary{margin:18px 0 0;color:var(--duet-text);font-size:14px}
+.approved-story-summary small{display:block;margin-top:6px;color:var(--duet-muted);font-size:12px}
+.approved-c05-map .duet-location-map{height:283px;max-width:355px}
+.approved-c05-map>.approved-location-note{font-size:11px;line-height:1.5;color:var(--duet-muted);margin:0 0 16px}
+.approved-location-actions{display:flex;flex-direction:column;align-items:stretch}
+.approved-location-settings{display:flex;flex-direction:column;gap:14px;margin-top:20px;width:100%}
+.approved-location-settings .duet-location-duration{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;color:var(--duet-gold)}
+.approved-location-settings select{width:auto;min-width:110px}
+.approved-location-duration-note{font-size:11px;color:var(--duet-muted);margin:0}
+.shell-map .approved-location-settings>.duet-location-action{min-height:46px;width:100%;font-size:18px;background:var(--duet-wine);border:1px solid var(--duet-gold);border-radius:8px;color:#fff}
+.approved-c06 .duet-chat-heading h2{position:relative;left:0;top:0}
+.approved-c06 .duet-chat-messages>.duet-privacy-hint{font-size:10px;line-height:1.5;margin:0 0 5px;color:var(--duet-muted)}
+.approved-court-hero .production-court-judge{order:0}
+.approved-court-hero .production-court-meta{order:1;margin:4px 0}
+.approved-court-hero>h2{order:2}
+.approved-court-hero.is-verdict .production-court-judge{width:88px;height:88px}
+.approved-c07-c08 .production-court-temperature{min-height:99px}
+.production-song-collection-tools{display:grid;gap:12px;margin-bottom:14px}
+.production-song-collection-filters{display:flex;gap:7px;overflow:auto}
+.production-song-collection-filters button{white-space:nowrap;border:1px solid var(--duet-rule);border-radius:18px;padding:7px 12px;font-size:12px}
+.production-song-collection-filters button[aria-pressed=true]{background:#231a10;border-color:var(--duet-gold)}
+.production-song-cover .approved-song-album{display:block;color:var(--duet-muted);font-size:12px;margin-top:4px}
+.production-song-cover .approved-song-saved{color:var(--duet-gold);font-size:11px}
+.production-song-cover .approved-song-reactions{display:flex;gap:6px;flex-wrap:wrap}
+.production-song-cover .approved-song-reactions button{padding:5px;border:0;background:transparent;font-size:20px}
+.music-view-revealed .production-song-cover{text-align:center;border:0!important;background:transparent}
+.music-view-revealed .production-song-cover .approved-song-reactions{justify-content:center}
+.music-view-revealed .production-song-cover>img{width:180px!important;height:180px!important}
+.music-view-revealed .production-song-cover>strong{font:27px/1.3 Georgia,serif;color:var(--duet-gold);margin:15px 0 5px}
+.music-view-revealed .production-song-cover>span{font-size:14px}
+@media(max-width:350px){.approved-c05-map .duet-location-map{height:283px}.approved-story-photo-grid,.approved-story-photo-grid>div{height:390px}}
+
+.approved-b08-dialog .approved-status-pet-cards{display:grid;gap:16px}
+.approved-status-pet-card{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--duet-rule);border-radius:10px;background:#100d0a}
+.approved-status-pet-card>img{width:76px;height:120px;object-fit:contain;flex:none}
+.approved-status-pet-card>div{min-width:0;flex:1}
+.approved-status-pet-card input{font-size:15px}
+.approved-status-pet-card fieldset{padding:0;border:0;margin:14px 0}
+.approved-status-pet-card legend{font-size:10px;text-transform:uppercase;color:var(--duet-gold);margin-bottom:7px}
+.approved-status-pet-card .status-options{display:flex;overflow-x:auto;gap:5px}
+.approved-status-pet-card .status-options button{white-space:nowrap;font-size:10px;padding:5px 8px;min-height:28px}
+.approved-status-pet-card small{font-size:10px;color:var(--duet-muted)}
+/* One shared navigation component, including review-approved secondary screens. */
+.production-music-dialog[open],.production-schedule-dialog[open]{display:flex;flex-direction:column}
+.production-music-dialog .production-music-body{flex:1;min-height:0;overflow-y:auto}
+.production-schedule-dialog .approved-agenda-form{min-height:0;flex:1;overflow-y:auto}
+.production-music-dialog .shell-bottom-nav,.production-schedule-dialog .shell-bottom-nav,.approved-b08-dialog .shell-bottom-nav{position:sticky;bottom:0;flex:none}
+.shell-bottom-nav>button,.production-music-dialog .shell-bottom-nav>button,.production-schedule-dialog .shell-bottom-nav>button{width:52px;height:42px;min-height:42px;padding:8px;border:1px solid transparent;border-radius:5px;background:transparent;color:#f5f4ef}
+.shell-bottom-nav>button[aria-current=page],.production-music-dialog .shell-bottom-nav>button[aria-current=page],.production-schedule-dialog .shell-bottom-nav>button[aria-current=page]{border-color:#c5a46d;color:#c5a46d;background:#0c0905}
+.host-invite-actions{display:flex;gap:10px;margin:12px 0}
+.host-invite-actions>button{flex:1}
+.host-invite-continue{width:100%;margin-top:15px}
+
+.production-record-thumbnail{border-radius:50%;background:repeating-radial-gradient(#111 0 3px,#262626 4px,#111 5px);padding:14px;box-sizing:border-box}.production-record-thumbnail img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+.music-view-add .production-import-row .production-record-thumbnail{border-radius:50%}
+
+.production-pets .production-pet-inspector{width:max-content;max-width:90%;padding:5px 9px;border-radius:8px;display:flex;gap:7px;font-size:12px;line-height:1.3}.shell-me-view{padding-top:0}
+
+.production-pets .home-pets{margin-top:34px}.production-pets .production-pet-inspector{top:auto;bottom:calc(100% - 44px);left:30.5%;margin-bottom:4px;max-width:48%;flex-wrap:wrap;justify-content:center}.production-pets .production-pet-inspector[data-kind="dog"]{left:71.5%}
+
+.duet-street-map{height:360px;width:100%;border-radius:16px;overflow:hidden;background:#17130e}.duet-amap-pin{width:40px;height:40px;border-radius:50%;border:2px solid #c7a665;background:#990000;color:#fff;font-size:19px}.duet-map-address{padding:12px;border:1px solid #665336;border-radius:10px;margin-top:10px}.duet-map-address small{display:block}
+
+.production-song-collection{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.collection-vinyl{min-width:0;text-align:center;border:0!important;background:none!important;padding:0!important}.collection-vinyl .production-record-thumbnail{width:100%;height:auto;aspect-ratio:1;display:block;padding:10px;border-radius:50%}.collection-vinyl .production-record-thumbnail img{display:block;aspect-ratio:1}.collection-vinyl p{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:9px 0 0;color:var(--duet-gold)}
+
+.collection-disc{position:relative}.collection-disc-button{display:block;width:100%;padding:0!important;border:0!important;background:none!important;border-radius:50%}.collection-remove{position:absolute;right:0;bottom:0;width:30px;height:30px;padding:0!important;border:1px solid var(--duet-gold);border-radius:50%;background:#990000;color:var(--duet-gold);font-size:20px}.collection-reaction-strip{display:flex;overflow-x:auto;gap:6px;max-width:100%;padding:8px 0;touch-action:pan-x}.collection-reaction-strip button{flex:0 0 34px;padding:5px;border:1px solid var(--duet-rule);border-radius:8px;background:#17130e}.collection-existing-reactions{font-size:14px}
+/* Larger album art with a narrow, visible grooved vinyl rim. */
+.production-record-thumbnail{padding:5px;box-shadow:0 0 0 1px #343434,0 2px 8px #0008;background:repeating-radial-gradient(circle,#101010 0 2px,#303030 3px,#111 4px)}
+.music-view-add .production-import-row .production-record-thumbnail{padding:7px;border:1px solid #343434}
+.collection-vinyl .production-record-thumbnail{padding:8px;box-shadow:0 0 0 1px #3a3a3a,0 3px 12px #0008}
+.production-record-thumbnail img{box-shadow:0 0 0 1px #080808}
+/* Satin vinyl: visible grooves, restrained edge light and depth. */
+.production-record-thumbnail{position:relative;isolation:isolate;padding:7px;background:repeating-radial-gradient(circle at center,transparent 0 2px,#ffffff14 2.5px,#0009 3.5px,transparent 4.5px),conic-gradient(from 25deg,#101113 0deg,#393b40 38deg,#111214 72deg,#070809 145deg,#303238 208deg,#111214 252deg,#292b30 310deg,#101113 360deg);border:1px solid #5c5d60;box-shadow:inset 0 0 0 1px #08090a,inset 0 0 0 3px #ffffff0c,0 0 0 1px #080808,0 4px 10px #000c}
+.production-record-thumbnail img{position:relative;z-index:1;border-radius:50%;box-shadow:0 0 0 1px #050505,0 0 0 2px #ffffff19,0 2px 5px #000a}
+.music-view-add .production-import-row .production-record-thumbnail{padding:10px;border:1px solid #5c5d60;box-shadow:inset 0 0 0 2px #ffffff0b,0 5px 14px #000b}
+.collection-vinyl .production-record-thumbnail{padding:clamp(10px,2.8vw,15px);border:1px solid #606166;box-shadow:inset 0 0 0 1px #060708,inset 0 0 0 3px #ffffff0d,0 0 0 1px #080808,0 7px 18px #000c}
+
+.collection-vinyl p{text-align:left;white-space:normal}.collection-vinyl p strong{display:block;font-size:13px;color:#fff;line-height:1.4}.collection-vinyl p small{display:block;font-size:11px;color:#96969c;line-height:1.5}.story-archive{width:min(100vw,440px);height:100dvh;max-height:100dvh;max-width:100vw;padding:20px;background:#000;color:#c7a665;border:0;margin:auto;overflow:auto}.story-archive::backdrop{background:#000c}.story-archive header{display:grid;grid-template-columns:40px 1fr 40px;align-items:center}.story-archive h2{text-align:center;font-family:Georgia,serif}.story-archive button{color:inherit;background:none;border:0}.story-year{display:flex;justify-content:space-between;margin:20px 0}.story-month{display:grid;grid-template-columns:65px 1fr;background:#171717;border-radius:16px;padding:18px 12px;margin:16px 0}.story-month h3{color:#eee}.story-days{display:grid;grid-template-columns:repeat(5,1fr);gap:16px 5px}.story-days button{height:58px;padding:0;color:#eee;display:flex;flex-direction:column;align-items:center;gap:5px}.story-days button:disabled{color:#555}.story-days img{width:30px;height:30px;object-fit:cover;border-radius:50%}.story-archive-full{padding:0;width:100vw;max-width:100vw}.story-full-photo{width:100%;height:100%;position:relative;touch-action:none;display:grid;place-items:center}.story-full-photo>img{width:100%;height:100%;object-fit:contain}.story-full-photo time{position:absolute;left:16px;top:max(16px,env(safe-area-inset-top));color:#fff;font-size:13px;text-shadow:0 1px 4px #000}.story-archive-entry{width:100%;padding:14px;color:#c7a665;border:1px solid #665336;background:#17130e;border-radius:10px}
+.collection-reaction-panel{padding:10px;background:#171717;border:1px solid #665336;border-radius:12px;text-align:left}.collection-reaction-panel textarea{width:100%;min-height:65px;box-sizing:border-box;background:#0b0b0b;color:#fff;border:1px solid #665336;border-radius:8px;padding:8px;font-size:12px}.collection-reaction-panel>button{width:100%;background:#990000;color:#fff;border:1px solid #665336;border-radius:8px;padding:8px}.collection-reaction-strip button[aria-pressed=true]{border-color:#c7a665;background:#332719}
+
+.duet-loading-spinner{display:inline-block;width:18px;height:18px;border:2px solid #c7a66535;border-top-color:#c7a665;border-radius:50%;animation:duet-loading-spin .8s linear infinite;vertical-align:middle}@keyframes duet-loading-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.duet-loading-spinner{animation-duration:2s}}
+
+.duet-avatar-button{position:relative}.partner-online-dot{position:absolute;right:-1px;bottom:-1px;width:10px;height:10px;border-radius:50%;background:#41c96b;border:2px solid #000;box-sizing:content-box;z-index:3}
+
+/* Animate the complete artwork: moving cropped limbs exposes rectangular seams. */
+.animated-pet[data-behavior=wag] .pet-motion-interaction,.animated-pet[data-behavior=swipe] .pet-motion-interaction,.animated-pet[data-behavior=look] .pet-motion-interaction,.animated-pet[data-behavior=lean] .pet-motion-interaction{animation:pet-whole-greet 1.8s ease-in-out}
+@keyframes pet-whole-greet{0%,100%{transform:translateY(0) rotate(0)}35%{transform:translateY(-2px) rotate(calc(var(--pet-inward) * 1deg))}70%{transform:translateY(-1px) rotate(calc(var(--pet-inward) * -.7deg))}}
+
+.approved-c06 .duet-chat-heading,.approved-c06 .duet-chat-heading>h2,.approved-c06 .duet-chat-heading>span{text-align:left!important}
+
+.calendar-quick-actions{position:relative}.calendar-add-menu{position:absolute;top:100%;left:0;z-index:25;display:flex;flex-direction:column;min-width:165px;padding:6px;background:#17130e;border:1px solid #665336;border-radius:10px;box-shadow:0 8px 24px #0008}.calendar-add-menu>button{white-space:nowrap;text-align:left;background:transparent;color:#c5a46d;border:0;padding:12px;font-size:14px}
+
+.daily-shared-schedule{display:grid;grid-template-columns:90px minmax(0,1fr) auto;gap:12px;align-items:start;padding:18px 0;border-bottom:1px solid #403322;font-size:13px}.daily-shared-schedule time,.daily-shared-schedule>span{color:#c5a46d;font-size:11px}.daily-shared-schedule strong{color:#eee}.daily-shared-schedule p{margin:6px 0 0;color:#b4a993;white-space:pre-wrap;overflow-wrap:anywhere}.approved-schedule-dialog .approved-b-back{border:0!important;background:transparent!important;border-radius:0!important}
+
+.approved-c06 .duet-agent-header{padding-left:6px;gap:6px}.approved-c06 .duet-agent-header>button:first-child{width:28px;flex:0 0 28px;padding:4px}.approved-c06 .duet-chat-heading{margin:0;padding:0}
+
+.collection-disc-button{touch-action:pan-y;-webkit-touch-callout:none;user-select:none}.collection-vinyl [role=alertdialog]{padding:12px;background:#17130e;border:1px solid #665336;border-radius:10px;color:#eee;font-size:12px}.collection-vinyl [role=alertdialog] button{margin:4px;padding:8px 12px;background:#210d0b;color:#c5a46d;border:1px solid #665336;border-radius:6px}
+/* Contain SDK overlays and attribution within the map's own stacking context. */
+.duet-street-map{position:relative;isolation:isolate;z-index:0;overflow:hidden}

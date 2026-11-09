@@ -1,0 +1,170 @@
+/* Approved Chat / Ask Duet / Story presentation, with live API components. */
+.duet-conversation{display:flex;flex-direction:column;min-height:calc(100dvh - 124px);width:100%;background:#000;color:var(--duet-text);font-family:Arial,Helvetica,sans-serif}
+.duet-conversation button,.duet-me-stories button,.duet-story-viewer button{font:inherit;cursor:pointer}
+.duet-conversation button:disabled,.duet-me-stories button:disabled,.duet-story-viewer button:disabled{cursor:default;opacity:.5}
+.duet-chat-header{display:flex;align-items:center;gap:8px;min-height:70px;padding:12px 16px 14px;flex-shrink:0;background:#000;color:var(--duet-gold)}
+.duet-chat-heading{min-width:0;flex:1}
+.duet-chat-heading h2{margin:0!important;padding:0!important;color:var(--duet-gold)!important;text-align:left!important;font-family:Georgia,'Times New Roman',serif;font-size:27px;line-height:1.2;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.duet-chat-heading>span{display:block;color:var(--duet-muted);font-size:10px;margin-top:4px}
+.duet-chat-header-tools{display:flex;align-items:center;gap:2px;margin-left:auto}
+.duet-icon-button{display:inline-grid;place-items:center;width:36px;height:36px;padding:7px;border:0!important;border-radius:50%;background:transparent!important;color:inherit;flex-shrink:0}
+.duet-icon-button svg{display:block;width:21px;height:21px}
+.duet-icon-button:hover{color:var(--duet-gold);background:#c5a46d13!important}
+.duet-avatar-button{display:inline-flex;align-items:center;justify-content:center;border:0!important;background:transparent!important;color:var(--duet-text);padding:0!important;flex-shrink:0}
+.duet-avatar-button:disabled{opacity:1!important}
+.duet-initial-avatar{display:inline-grid;place-items:center;width:37px;height:37px;border:1px solid var(--duet-wine);border-radius:50%;background:#000;flex-shrink:0;box-sizing:border-box}
+.duet-initial-avatar>span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;color:var(--duet-text);background:var(--duet-wine);font-size:12px;line-height:1;font-weight:400;box-sizing:border-box}
+.duet-initial-avatar.story-ring{width:46px;height:46px;padding:2px;border:0}
+.duet-initial-avatar.story-ring>span{border:2px solid #000}
+.duet-initial-avatar.is-unseen{background:conic-gradient(from 210deg,#ffd36b 0deg,#ff8a31 76deg,#e1306c 164deg,#c13584 238deg,#833ab4 310deg,#ffd36b 360deg)}
+.duet-initial-avatar.is-seen{background:#69645f}
+.duet-initial-avatar.is-large{width:66px;height:66px}.duet-initial-avatar.is-large.story-ring{width:70px;height:70px}
+.duet-initial-avatar.is-large>span{font-size:23px}
+.duet-chat-messages{display:flex;flex-direction:column;gap:10px;flex:1;min-height:160px;overflow-y:auto;overflow-x:hidden;padding:12px 16px 28px;scrollbar-width:thin}
+.duet-chat-date{color:#97928c;font-size:11px;margin:0 0 7px;text-align:left}
+.duet-message-row{display:flex;align-items:center;gap:6px;max-width:100%;flex-shrink:0;position:relative}
+.duet-message-row.is-own{justify-content:flex-end;padding-left:12px}
+.duet-message-row.is-received{justify-content:flex-start;padding-right:46px}
+.duet-message-bubble{position:relative;max-width:100%;min-width:24px;background:#1e1e1c;padding:11px 12px;border-radius:10px;color:#f8f5ef;overflow-wrap:anywhere;line-height:1.45;font-size:14px}
+.duet-message-row.is-own .duet-message-bubble{background:var(--duet-wine);max-width:calc(100% - 61px)}
+.duet-message-bubble p{margin:0;white-space:pre-wrap;font-size:inherit;line-height:inherit;color:inherit}
+.duet-message-bubble audio{display:block;width:min(240px,100%);height:36px;max-width:100%;margin:3px 0}
+.duet-message-check{width:15px;height:15px;display:grid;place-items:center;border:1px solid #766a55;border-radius:50%;color:#766a55;flex-shrink:0}
+.duet-message-check.is-read{color:var(--duet-gold);border-color:var(--duet-gold)}
+.duet-message-check svg{width:10px;height:10px;stroke-width:2}
+.duet-message-avatar .duet-initial-avatar{width:31px;height:31px}
+.duet-message-avatar .duet-initial-avatar>span{font-size:10px}
+.duet-chat-photo{display:block;max-width:100%;max-height:290px;border-radius:6px;object-fit:contain}
+.duet-bubble-author{display:block;color:var(--duet-gold);font-size:11px;margin-bottom:4px}
+.duet-story-quote,.duet-bubble-link{display:block!important;color:var(--duet-gold)!important;background:transparent!important;border:0!important;padding:0 0 5px!important;text-align:left;font-size:11px!important}
+.duet-bubble-link{margin-top:7px}
+.duet-message-actions{position:absolute;right:2px;top:2px;font-size:11px;z-index:2}
+.duet-message-actions summary{display:grid;place-items:center;width:20px;height:20px;cursor:pointer;list-style:none;opacity:0;border-radius:50%;background:#0008}
+.duet-message-actions summary::-webkit-details-marker{display:none}
+.duet-message-actions summary svg{width:13px;height:13px}
+.duet-message-bubble:hover .duet-message-actions summary,.duet-message-actions:focus-within summary,.duet-message-actions[open] summary{opacity:1}
+.duet-message-actions>div{display:grid;position:absolute;right:0;top:24px;width:145px;padding:5px;border:1px solid var(--duet-rule);background:#15120e;border-radius:8px;box-shadow:0 8px 20px #0008}
+.duet-message-actions button{background:transparent;border:0;color:var(--duet-text);padding:9px;text-align:left;font-size:11px}
+.duet-chat-empty{color:var(--duet-muted);margin:auto;text-align:center;font-size:13px}
+.duet-chat-search{padding:0 16px 8px}
+.duet-chat-search input,.duet-chat-composer input,.duet-story-draft input,.duet-story-draft select,.duet-story-reply input{min-width:0;box-sizing:border-box;background:#151515;border:1px solid #37332c;border-radius:6px;color:var(--duet-text);font:inherit;padding:11px 12px}
+.duet-chat-search input{width:100%;font-size:13px}
+.duet-chat-compose-area{position:relative;margin-top:auto;flex-shrink:0;padding:5px 12px 16px;background:#000}
+.duet-chat-composer{display:flex;align-items:center;gap:6px;margin:0}
+.duet-chat-composer>.duet-icon-button{width:32px;padding:5px;color:var(--duet-text)}
+.duet-chat-composer input{flex:1;min-width:0;min-height:40px;font-size:12px;text-align:center}
+.duet-chat-composer input:focus{text-align:left}
+.duet-send-button{display:grid;place-items:center;width:34px;height:34px;flex-shrink:0;background:var(--duet-gold)!important;color:#100d08!important;border:0!important;border-radius:50%;padding:7px!important}
+.duet-send-button svg{width:21px;height:21px}
+.duet-chat-status{font-size:12px;line-height:1.45;color:var(--duet-gold);margin:5px 16px 10px;overflow-wrap:anywhere}
+.duet-chat-attachment-menu{position:absolute;bottom:65px;left:16px;z-index:5;display:grid;gap:3px;min-width:160px;background:#15120e;border:1px solid var(--duet-rule);border-radius:10px;padding:7px;box-shadow:0 8px 30px #000a}
+.duet-chat-attachment-menu button{display:flex;gap:10px;align-items:center;background:transparent;color:var(--duet-gold);border:0;padding:11px;text-align:left;font-size:13px}
+.duet-chat-attachment-menu svg{width:20px;height:20px}
+.duet-chat-photo-preview,.duet-voice-panel{position:relative;border:1px solid var(--duet-rule);border-radius:10px;background:#15120e;padding:14px;margin-bottom:12px}
+.duet-chat-photo-preview img{display:block;max-width:100%;max-height:230px;border-radius:6px;margin:auto}
+.duet-inline-actions{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:12px}
+.duet-inline-actions button,.duet-voice-recorder button{padding:9px 14px;color:var(--duet-gold);border:1px solid var(--duet-rule);border-radius:7px;background:#19150f;font-size:13px}
+.duet-inline-actions .duet-primary-button{background:var(--duet-wine);color:#fff}
+.duet-panel-close{position:absolute;right:4px;top:4px;color:var(--duet-gold)}
+.duet-voice-recorder{font-size:12px;color:var(--duet-muted);padding-right:10px}
+.duet-voice-recorder>summary{display:none}
+.duet-voice-recorder>label{display:block;margin:12px 0}
+.duet-voice-recorder input{display:block;max-width:100%;font-size:11px;margin-top:6px}
+.duet-voice-recorder audio{width:100%;margin:8px 0}
+.duet-voice-recorder button{margin:3px 5px 3px 0}
+.duet-me-profile{display:flex;align-items:center;gap:16px;padding:10px 4px 22px;color:var(--duet-gold)}
+.duet-me-avatar-wrap{position:relative}
+.duet-me-profile strong{font:15px Arial,Helvetica,sans-serif}
+.duet-profile-link{display:block;font-size:12px!important;margin-top:5px;padding:0;border:0;background:none;color:var(--duet-gold)}
+.duet-story-add{position:absolute;right:-2px;bottom:0;width:24px;height:24px;border:2px solid #000;border-radius:50%;padding:3px;background:var(--duet-gold);color:#000;display:grid;place-items:center}
+.duet-story-add svg{width:16px;height:16px}
+.duet-story-draft{display:grid;gap:12px;padding:14px;border:1px solid var(--duet-rule);border-radius:10px;margin-bottom:18px;color:var(--duet-text)}
+.duet-story-draft-photos{display:flex;gap:7px;overflow:auto}
+.duet-story-draft-photos img{width:72px;height:72px;object-fit:cover;border-radius:6px}
+.duet-story-draft label{display:grid;gap:6px;font-size:12px;color:var(--duet-gold)}
+.duet-story-draft small,.duet-chat-hint{margin:0;font-size:11px;line-height:1.5;color:var(--duet-muted)}
+.duet-agent{min-height:calc(100dvh - 50px)}
+.duet-agent-header{border-bottom:1px solid #2d251a;gap:8px;padding-left:8px}
+.duet-agent-emblem{width:33px;height:33px;border:1px solid var(--duet-gold-muted);border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.duet-agent-emblem svg{width:21px;height:21px}
+.duet-agent .duet-message-row.is-own .duet-message-bubble{max-width:88%}
+.duet-agent .duet-message-row.is-received{padding-right:28px}
+.duet-agent-composer{margin:auto 14px 12px;padding:10px 11px 8px;border:1px solid var(--duet-rule);border-radius:16px;background:#171615;flex-shrink:0}
+.duet-agent-composer textarea{width:100%;resize:none;border:0;outline:none;background:none;color:var(--duet-text);padding:4px;font:14px/1.5 Arial,Helvetica,sans-serif;box-sizing:border-box}
+.duet-agent-tools{display:flex;gap:8px;align-items:center;color:var(--duet-muted)}
+.duet-mode-switch{display:flex;align-items:center;gap:6px;margin-right:auto;background:transparent;border:0;padding:4px;color:var(--duet-muted);font-size:11px!important}
+.duet-mode-switch>svg{width:19px;height:19px}
+.duet-mode-switch.is-on{color:var(--duet-gold)}
+.duet-switch-track{display:block;width:25px;height:14px;border-radius:9px;background:#4b4540;padding:2px;box-sizing:border-box}
+.duet-switch-track>span{display:block;width:10px;height:10px;border-radius:50%;background:#e9e4da;transition:transform .15s}
+.duet-mode-switch.is-on .duet-switch-track{background:var(--duet-wine)}
+.duet-mode-switch.is-on .duet-switch-track>span{transform:translateX(11px);background:var(--duet-gold)}
+.duet-privacy-hint{margin:6px 4px 0;color:#a49a87;font-size:10px;line-height:1.4}
+.duet-icon-button.is-listening{color:#e57474;background:#8b000033!important}
+.duet-story-viewer{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.98);display:grid;place-items:center;color:var(--duet-text);padding:10px;box-sizing:border-box}
+.duet-story-viewer-inner{width:min(100%,520px);height:calc(100dvh - 20px);display:flex;flex-direction:column;gap:10px;position:relative}
+.duet-story-progress{display:flex;gap:4px;padding:4px 0}
+.duet-story-progress span{height:3px;flex:1;border-radius:2px;background:#4f4637}
+.duet-story-progress span.is-active{background:var(--duet-gold)}
+.duet-story-viewer .duet-story-close{position:absolute;right:4px;top:16px;z-index:5;background:#0008!important;color:#fff}
+.duet-story-canvas{position:relative;display:grid;place-items:center;overflow:hidden;background:#090909;border-radius:9px;min-height:0;flex:1;touch-action:pan-y}
+.duet-story-image{width:100%;height:100%;object-fit:contain;min-height:0}
+.duet-story-step{position:absolute;top:46%;width:32px;height:40px;display:grid;place-items:center;background:#0006;border:0;color:#fff;border-radius:20px;z-index:2}
+.duet-story-step svg{width:18px;height:18px}
+.duet-story-step.is-prev{left:4px}
+.duet-story-step.is-next{right:4px}
+.duet-story-step.is-next svg{transform:rotate(180deg)}
+.duet-story-step:disabled{opacity:0!important;pointer-events:none}
+.duet-story-caption{position:absolute;bottom:14px;left:12px;right:55px;margin:0;padding:10px;background:#0008;border-radius:8px;color:#fff;font:14px/1.5 Arial,Helvetica,sans-serif}
+.duet-story-more{position:absolute;bottom:16px;right:8px;background:#0008!important;color:#fff;z-index:4}
+.duet-story-menu{position:absolute;bottom:60px;right:10px;z-index:6;min-width:170px;padding:7px;border:1px solid var(--duet-rule);border-radius:12px;background:#17130ff5;box-shadow:0 6px 25px #0008;display:grid}
+.duet-story-menu button{display:flex;align-items:center;gap:12px;padding:12px;color:var(--duet-text);background:transparent;border:0;text-align:left;font-size:13px}
+.duet-story-menu svg{width:18px;height:18px;color:var(--duet-gold)}
+.duet-story-reply{display:flex;gap:8px;align-items:center;padding:4px 2px 8px}
+.duet-story-reply input{flex:1;font-size:13px}
+.duet-story-viewer .duet-chat-status{margin:0 4px 6px}
+@media(hover:none){.duet-message-actions summary{opacity:.45}}
+@media(min-width:700px){.duet-conversation{min-height:680px}.duet-agent{min-height:730px}}
+@media(prefers-reduced-motion:reduce){.duet-switch-track>span{transition:none}}
+/* Keep the composer above the approved primary navigation on every screen size. */
+.shell-chat-view>.duet-shared-chat{height:calc(100dvh - 66px - env(safe-area-inset-bottom,0px));min-height:0;flex:none}
+.shell-chat-view>.duet-agent{height:100dvh;min-height:0;flex:none}
+.shell-chat-view .duet-chat-messages{min-height:0}
+
+/* C05: actual map first, then the compact sharing controls. */
+.shell-map .duet-map-section{margin:0;width:100%}
+.duet-location-map{position:relative;width:100%;height:260px;overflow:hidden;border:1px solid #4c3c27;border-radius:12px;background:#14120f}
+.duet-map-road{position:absolute;display:block;width:160%;height:21px;left:-25%;top:42%;background:#30291e;border-block:1px solid #51412b;transform:rotate(-30deg);pointer-events:none}
+.duet-map-road.is-two{top:20%;transform:rotate(53deg);height:12px;background:#242017}
+.duet-map-road.is-three{top:76%;transform:rotate(8deg);height:15px;background:#29231a}
+.duet-live-map-marker{position:absolute;display:flex;align-items:center;flex-direction:column;gap:3px;z-index:3}
+.duet-map-initial{width:44px;height:44px;display:grid;place-items:center;border:2px solid var(--duet-gold);border-radius:50%;background:var(--duet-wine);color:#fff;font-size:18px;box-shadow:0 2px 8px #0008}
+.duet-live-map-marker small{max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-radius:5px;background:#000b;padding:3px 6px;color:var(--duet-text);font-size:10px}
+.duet-story-map-marker{position:absolute;display:flex;flex-wrap:wrap;gap:3px;max-width:95px;transform:translate(-50%,-50%);z-index:4}
+.shell-map .duet-story-map-marker button{min-height:26px;width:26px;height:26px;padding:3px;border:1px solid var(--duet-gold);border-radius:6px;background:var(--duet-wine);color:var(--duet-gold);font-size:12px}
+.duet-map-empty{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:16px;color:#b7a88f;text-align:center;font-size:12px;background:#0004}
+.duet-map-legend{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:#b3a58f;margin-top:9px}
+.duet-map-legend span{display:flex;align-items:center;gap:5px}
+.duet-map-legend i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--duet-gold)}
+.duet-location-controls{margin:4px 0 0!important;color:var(--duet-text)}
+.duet-location-controls h2{font:24px/1.2 Georgia,serif;margin:0 0 9px;color:var(--duet-gold)}
+.duet-location-note{font-size:12px;line-height:1.5;margin:0 0 16px;color:#b3a58f}
+.duet-location-state{display:flex;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid #3e3426;margin-bottom:14px}
+.duet-location-state>i{width:8px;height:8px;border-radius:50%;flex:none;background:#706555}
+.duet-location-state.is-sharing>i{background:var(--duet-gold);box-shadow:0 0 0 4px #c5a46d18}
+.duet-location-state strong{font-size:13px;font-weight:500;color:var(--duet-gold)}
+.duet-location-state small{display:block;font-size:10px;line-height:1.5;color:#ab9f8b;margin-top:5px}
+.shell-map label.duet-location-duration{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px;font-size:12px}
+.shell-map .duet-location-duration select{width:auto;padding:9px 11px;font-size:12px;color:var(--duet-gold)}
+.shell-map button.duet-location-action{width:100%;background:var(--duet-wine);border-color:#96763e;color:#f9efe0;margin-top:2px;min-height:44px}
+.shell-map button.duet-location-action.is-stop{background:#1b1510;color:var(--duet-gold)}
+.duet-location-error{border:1px solid #765c38;border-radius:8px;padding:10px;font-size:12px;line-height:1.5;color:#e5bc80;overflow-wrap:anywhere}
+@media(max-width:350px){.duet-chat-header{padding-inline:12px;gap:6px}.duet-chat-header-tools{gap:0}.duet-chat-header-tools .duet-icon-button{width:32px}.duet-chat-heading h2{font-size:25px}.duet-location-map{height:235px}}
+
+/* Size both conversations inside the viewport, reserving the actual navigation height. */
+.duet-production-shell.view-chat:has(.shell-chat-view > .duet-conversation){height:100dvh;min-height:0;overflow:hidden}
+.duet-production-shell.view-chat .shell-chat-view:has(> .duet-conversation){flex:1;min-height:0;overflow:hidden}
+.duet-production-shell .shell-chat-view > .duet-conversation{height:auto;min-height:0;flex:1;overflow:hidden}
+.duet-production-shell .shell-chat-view .duet-chat-messages{flex:1 1 0;min-height:0;overscroll-behavior:contain}
+.duet-production-shell .shell-chat-view .duet-chat-compose-area,
+.duet-production-shell .shell-chat-view .duet-agent-composer{flex-shrink:0}

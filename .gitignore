@@ -1,0 +1,35 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Local credentials; only the blank template belongs in Git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local scratch, database files and uploads
+work/
+.superpowers/
+.worktrees/
+.netlify/
+.vercel/
+supabase/.temp/
+supabase/.branches/
+*.db
+*.sqlite*
+uploads/
+
+# Editor and OS files
+.DS_Store
+.idea/
+*.log
+.vercel
+.env*
+
+# Ignore local dependency links as well as directories
+node_modules

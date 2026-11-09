@@ -1,0 +1,70 @@
+/* D01 / D03: complete approved export, with live profile and owned-pet controls. */
+.duet-production-shell .approved-d-profile,
+.duet-production-shell .approved-d-pets{display:flex;flex:1;flex-direction:column;min-width:0;min-height:0}
+.duet-production-shell .approved-d-profile form,
+.duet-production-shell .approved-d-pet-form{display:flex;flex:1;flex-direction:column;min-width:0;gap:0;margin:0}
+.approved-d-profile-content{min-width:0;padding:0 2px 24px}
+.approved-d-eyebrow{margin:0 0 15px;color:#c5a46d;font-size:10px;letter-spacing:.16em;line-height:1.45}
+.approved-d-profile .profile-hero{display:flex;align-items:center;gap:14px;padding:7px 2px 20px;margin:0;min-width:0}
+.approved-d-profile .profile-initial{width:58px;height:58px;flex:none;background:#8b0000;color:#c5a46d;border:1px solid #c5a46d;border-radius:50%;font:23px Georgia,serif}
+.duet-production-shell .approved-d-profile .profile-hero h2{margin:0;min-width:0;overflow-wrap:anywhere;color:#f4eee5;font:26px/1.2 Georgia,serif}
+.approved-d-profile-fields{padding:14px;border:1px solid #403322;border-radius:11px;background:#14110e}
+.duet-production-shell .approved-d-profile-fields>label{display:flex;flex-direction:column;gap:7px;margin:0 0 14px;color:#c5a46d;font-size:12px}
+.approved-d-profile-fields>label:last-child{margin-bottom:0}
+.duet-production-shell .approved-d-profile-fields input,
+.duet-production-shell .approved-d-profile-fields select{width:100%;min-height:42px;padding:9px 11px;border:1px solid #51412e;border-radius:7px;background:#090807;color:#f4eee5;font-size:14px;color-scheme:dark}
+.approved-d-profile .shared-birthday{display:flex;justify-content:space-between;gap:12px;margin:16px 0 0;color:#c5a46d;font-size:12px;overflow-wrap:anywhere}
+.approved-d-profile .shared-birthday time{white-space:nowrap;color:#aa9b87}
+.approved-d-footer{position:sticky;bottom:0;z-index:3;flex:none;margin:auto -18px -32px;padding:10px 20px max(16px,env(safe-area-inset-bottom));border-top:1px solid #2d241a;background:#000}
+.duet-production-shell .shell-page-body .approved-d-footer>button{width:100%;min-height:46px;padding:9px 14px;border:1px solid #a77c3d;border-radius:8px;background:#8b0000;color:#fff;font-size:13px;font-weight:400}
+.approved-d-footer>p{margin:0 0 10px;color:#c5a46d;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.approved-d-pet-list{padding:0 2px 24px}
+.approved-d-pet-choice{display:flex;align-items:center;gap:10px;margin:12px 0;padding:10px;border:1px solid #403322;border-radius:11px;background:#11100e;min-width:0}
+.approved-d-pet-choice:first-child{margin-top:12px}
+.approved-d-pet-choice .approved-d-pet-portrait{width:76px;height:76px;flex:none;object-fit:contain}
+.approved-d-pet-info{display:grid;gap:4px;min-width:0;flex:1}
+.approved-d-pet-owner{display:block;color:#aa9b87;font-size:9px;line-height:1.45;letter-spacing:.08em;text-transform:uppercase;overflow-wrap:anywhere}
+.duet-production-shell .approved-d-pet-name{display:block;margin:0;min-width:0}
+.duet-production-shell .approved-d-pet-name input{display:block;width:100%;min-height:26px;height:26px;padding:2px 0;border:0;border-bottom:1px solid #403322;border-radius:0;background:transparent;color:#f4eee5;font-size:13px;font-weight:600;line-height:20px}
+.approved-d-pet-partner-name{color:#f4eee5;font-size:13px;line-height:26px;overflow-wrap:anywhere}
+.duet-production-shell .shell-page-body .approved-d-pets .approved-d-pet-status{display:flex;gap:9px;flex-wrap:wrap;min-height:16px;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:#aa9b87;font-size:9px;line-height:1.45;text-align:left}
+.approved-d-pet-status>span{display:flex;gap:3px;align-items:center}
+.approved-d-pet-status b{color:#f4eee5;font-size:9px;font-weight:500}
+.approved-d-pet-looks{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;min-width:0}
+.duet-production-shell .approved-d-pets .approved-d-pet-looks>button,
+.approved-d-pet-looks>span{min-height:27px;max-width:100%;margin:0;padding:5px 8px;border:1px solid #403322;border-radius:14px;background:transparent;color:#d8c5a5;font-size:10px;line-height:1.5;font-weight:400;overflow-wrap:anywhere}
+.duet-production-shell .approved-d-pets .approved-d-pet-looks>button[aria-pressed=true],
+.approved-d-pet-looks>.is-selected{border-color:#c5a46d;background:#231a10;color:#f4d59a}
+@media(min-width:600px){.approved-d-footer{margin-bottom:-40px}}
+@media(max-width:340px){.approved-d-pet-choice{padding:8px;gap:8px}.approved-d-pet-choice .approved-d-pet-portrait{width:64px;height:70px}}
+/* E05 shares the same live, one-per-species pet assignment. */
+.approved-e-pet-setup{display:flex;flex-direction:column}
+.approved-e-pet-setup>h1{min-height:82px;font-size:22px}
+.approved-e-pet-setup .pet-selection-form{display:flex;flex:1;flex-direction:column;gap:0;padding:0}
+.approved-e-pet-body{padding:26px 24px 24px;min-width:0}
+.approved-e-pet-progress{display:flex;gap:5px;margin:3px 0 22px}
+.approved-e-pet-progress>i{height:3px;flex:1;background:#710000}
+.approved-e-pet-body>h2{margin:3px 0 10px;font:26px/1.2 Georgia,serif;color:#f4eee5}
+.approved-e-pet-hint{margin:0 0 16px;color:#aa9b87;font-size:12px;line-height:1.45}
+.approved-e-pet-lock{display:flex;align-items:center;gap:9px;margin:14px 0;padding:10px;border:1px solid #403322;border-radius:9px;background:#13100d}
+.approved-e-pet-lock>img{width:36px;height:40px;object-fit:contain;flex:none}
+.approved-e-pet-lock>div{display:grid;gap:3px;flex:1;min-width:0}.approved-e-pet-lock b{color:#f4eee5;font-size:12px;font-weight:500;overflow-wrap:anywhere}.approved-e-pet-lock small{color:#aa9b87;font-size:10px}.approved-e-pet-lock>span{color:#c5a46d}
+.approved-e-pet-body .pet-chooser{margin:12px 0}
+.approved-e-pet-body .pet-art-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;overflow:visible}
+.approved-e-pet-body>label{display:grid;gap:7px;color:#c5a46d;font-size:12px}
+.approved-e-pet-footer{margin-top:auto;padding:10px 24px max(16px,env(safe-area-inset-bottom));border-top:1px solid #2d241a;background:#000}
+.approved-e-pet-footer>button{width:100%;min-height:46px;padding:9px 14px;border:1px solid #a77c3d;border-radius:8px;background:#8b0000;color:#fff;font-size:13px;font-weight:400}
+.approved-e-pet-footer>button:disabled{opacity:.5;cursor:default}
+
+/* Keep the reused status dialog above the shell's generic button specificity. */
+.duet-production-shell .approved-d-pets .status-dialog .schedule-toolbar>button{min-width:54px;min-height:40px;padding:7px 9px;border:0;border-radius:20px;background:transparent;color:#c5a46d;font-size:13px}
+.duet-production-shell .approved-d-pets .status-dialog .schedule-toolbar>.schedule-add{padding-inline:16px;background:#8b0000;color:#fff}
+.duet-production-shell .approved-d-pets .status-dialog .status-options>button{flex:0 0 auto;white-space:nowrap;min-height:36px;padding:8px 13px;border:1px solid #403322;border-radius:20px;background:transparent;color:#ddd;font-size:12px}
+.duet-production-shell .approved-d-pets .status-dialog .status-options>button[aria-pressed=true]{background:#8b0000;border-color:#c5a46d;color:#fff}
+.duet-production-shell .approved-d-pets .status-dialog .status-more{flex:0 0 28px;width:28px;min-height:36px;padding:0;border:0;border-radius:0;background:transparent;color:#c5a46d;font-size:24px}
+
+/* Larger status controls and a compact horizontally scrollable breed selector. */
+.duet-production-shell .shell-page-body .approved-d-pets .approved-d-pet-status{font-size:13px;min-height:36px;gap:8px 12px;padding:5px 0}
+.approved-d-pet-status b{font-size:14px;font-weight:600}
+.approved-d-pet-looks{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding-bottom:5px;touch-action:pan-x}
+.duet-production-shell .approved-d-pets .approved-d-pet-looks>button,.approved-d-pet-looks>span{flex:0 0 auto;white-space:nowrap;max-width:none;min-height:32px}

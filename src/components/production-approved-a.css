@@ -1,0 +1,43 @@
+/* A01/A02 saved on 3 November, with per-song Question / Message / Skip. */
+.production-import-row{display:flex;align-items:center;gap:14px}
+.music-view-add .production-import-row{align-items:flex-start;gap:16px}
+.music-view-add .production-import-row .production-record-thumbnail{width:104px;height:104px;flex:0 0 104px;border:1px solid var(--duet-rule);border-radius:8px;box-shadow:0 4px 18px #0008}
+.production-record-thumbnail{width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;font-size:49px;line-height:1;color:var(--duet-gold);overflow:hidden;border-radius:5px;background:#171412}
+.production-record-thumbnail img{width:100%;height:100%;object-fit:cover}
+.production-music-body .production-upload{display:inline-flex;cursor:pointer;padding:7px 0;font-size:14px}
+.production-upload:focus-within{outline:1px solid var(--duet-gold)}
+.production-import-row p{margin:4px 0;font-size:11px;color:var(--duet-muted)}
+.production-song-fields{border:1px solid var(--duet-rule);border-radius:8px;overflow:hidden}
+.production-song-fields label{display:grid;grid-template-columns:65px minmax(0,1fr);align-items:center;padding:4px 12px;gap:10px;border-bottom:1px solid var(--duet-rule)}
+.production-song-fields label:last-child{border-bottom:0}
+.production-song-fields input{border:0;background:transparent;padding:12px 0;border-radius:0}
+.production-cover-option{font-size:12px;color:var(--duet-muted)}
+.production-cover-option summary{cursor:pointer}
+.production-cover-option input{margin-top:10px;font-size:11px}
+.production-surprise-editor{display:grid;gap:12px}
+.production-note-heading{display:flex;align-items:center;justify-content:space-between;font-size:14px;color:var(--duet-gold)}
+.production-note-heading button{padding:0 3px;min-height:32px;border:0;font-size:12px}
+.production-surprise-modes{display:flex;gap:6px;max-width:100%;width:max-content;padding:3px;background:#171412;border:1px solid var(--duet-rule);border-radius:8px}
+.production-surprise-modes button{min-height:32px;border:0;padding:6px 12px;font-size:12px}
+.production-surprise-modes button[aria-pressed=true]{background:var(--duet-wine);color:#fff}
+.production-surprise-editor textarea{min-height:108px}
+.music-view-add .production-music-body,.music-view-queue .production-music-body{display:flex;flex-direction:column}
+.production-music-form{display:flex;flex-direction:column;flex:1;gap:18px}
+.production-music-dialog .production-music-footer{width:100%;margin-top:auto;min-height:46px}
+.production-queue-summary{display:flex;align-items:center;gap:10px;padding-bottom:4px}
+.production-queue-summary>div{flex:1;min-width:0;overflow-wrap:anywhere}
+.production-queue-avatar{width:35px;height:35px;flex:0 0 35px;display:grid;place-items:center;border:1px solid var(--duet-gold);border-radius:50%;background:var(--duet-wine);color:#fff;font-size:13px}
+.production-queue-summary strong{font-size:14px;color:var(--duet-gold);font-weight:500}
+.production-queue-summary small{display:block;font-size:10px;color:var(--duet-muted);margin-top:5px}
+.production-queue-summary>span:last-child{flex:0 0 auto;margin-left:auto;white-space:nowrap;font-size:11px;color:var(--duet-gold)}
+.production-queue-song{display:flex;align-items:center;gap:12px;min-width:0}
+.production-queue-song>div{flex:1;min-width:0;overflow-wrap:anywhere}
+.production-queue-song strong{font:19px/1.4 Georgia,serif}
+.production-queue-song small{display:block;color:var(--duet-muted);font-size:12px;margin-top:4px}
+.production-queue-song button,.production-queue-note button{flex:0 0 34px;display:grid;place-items:center;width:34px;min-height:34px;padding:7px;border:0}
+.production-queue-song svg,.production-queue-note svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.production-queue-note{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--duet-muted)}
+.production-queue-note>span{flex:1;min-width:0;overflow-wrap:anywhere;white-space:pre-wrap;line-height:1.6}
+.production-music-dialog .production-add-another{align-self:flex-start;padding:8px 0;border:0;font-size:13px}
+.production-pull-form>p{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:350px){.production-surprise-modes button{padding-inline:9px}.production-queue-summary small{font-size:9px}.production-queue-summary{gap:7px}.production-music-body{padding-inline:16px}}

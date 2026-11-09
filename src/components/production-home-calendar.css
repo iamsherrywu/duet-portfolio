@@ -1,0 +1,104 @@
+/* Approved mobile Home and Calendar, backed by the existing live services. */
+.production-home{padding:0!important;display:flex;flex-direction:column;min-height:0;flex:1;background:#000}
+.production-music{width:100%;margin:auto 0;padding:26px 20px 24px}
+.pet-home .production-turntable{display:block;position:relative;width:100%;aspect-ratio:1.25;overflow:hidden;padding:0;margin:0;border:0;border-radius:0;background:transparent;min-height:0}
+.production-turntable-art{position:absolute;left:-15%;top:50%;width:130%;height:auto;transform:translateY(-50%);overflow:visible}
+.production-vinyl{transform-box:view-box;transform-origin:655px 512px;animation:production-record-turn 20s linear infinite;animation-play-state:paused}
+.production-vinyl[data-spinning=true]{animation-play-state:running}
+.production-tonearm{transform-box:view-box;transform-origin:1103px 321px;transition:transform 1.2s ease}
+.production-turntable[data-has-unopened=true] .production-tonearm{transform:rotate(28deg)}
+@keyframes production-record-turn{to{transform:rotate(360deg)}}
+.production-music-actions{display:flex;justify-content:center;gap:12px;margin-top:14px}
+.pet-home .production-music-actions button{height:38px;min-height:38px;min-width:105px;padding:0 18px;font-size:12px;background:transparent;border-color:#79603c}
+.production-primary,.pet-home .production-primary,.production-music-dialog .production-primary{background:var(--duet-wine)!important;color:#fff!important;border:1px solid var(--duet-gold)!important}
+.production-music-dialog{position:fixed;inset:0;width:min(100%,390px);height:100dvh;max-height:100dvh;max-width:100vw;padding:0;margin:0 auto;border:0;border-radius:0;background:#000;color:var(--duet-text);overflow-y:auto;overscroll-behavior:contain}
+.production-music-dialog::backdrop{background:#000b}
+.production-music-header{position:sticky;top:0;z-index:2;display:grid;grid-template-columns:82px minmax(0,1fr) 82px;align-items:center;min-height:72px;padding:env(safe-area-inset-top,0) 10px 0;background:#000;border-bottom:1px solid var(--duet-rule)}
+.production-music-header h2{margin:0;text-align:center;color:var(--duet-gold);font:24px/1.2 Georgia,serif}
+.production-music-dialog button{min-height:40px;padding:9px 14px;border:1px solid var(--duet-rule);border-radius:6px;background:transparent;color:var(--duet-gold)}
+.production-music-header button{border:0;background:transparent;min-width:0;padding:8px 4px;font-size:11px}
+.production-music-header .production-back{width:44px;height:44px;display:grid;place-items:center;padding:9px}
+.production-back svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.production-music-body{display:grid;align-content:start;gap:18px;padding:26px 22px max(30px,env(safe-area-inset-bottom));min-height:calc(100% - 72px)}
+.production-music-body label{display:grid;gap:9px;color:var(--duet-gold);font-size:13px}
+.production-music-body input,.production-music-body textarea{width:100%;min-width:0;padding:13px 12px;border:1px solid var(--duet-rule);border-radius:7px;background:#171412;color:#f7f3ed;font-size:14px}
+.production-music-body textarea{min-height:120px;resize:vertical;line-height:1.6}
+.production-music-form,.production-pull-form,.production-song-queue{display:grid;gap:18px}
+.production-song-queue article{display:grid;gap:13px;padding-bottom:18px;border-bottom:1px solid var(--duet-rule)}
+.production-song-queue article>button{justify-self:end;font-size:12px}
+.production-song-collection{display:grid;gap:18px}
+.production-song-cover{text-align:center;display:grid;justify-items:center;gap:10px}
+.production-song-cover>span[aria-label]{font-size:100px;line-height:120px;color:var(--duet-gold)}
+.production-song-cover p{margin:0}
+.production-song-cover details{font-size:12px;color:var(--duet-gold)}
+.production-pull-form>p{font:26px/1.4 Georgia,serif;color:var(--duet-gold);margin:12px 0 20px}
+.production-feedback{color:var(--duet-muted);font-size:12px;line-height:1.6;margin:8px 20px}
+.production-feedback button{margin-left:10px}
+.production-calendar{padding:8px 16px 12px;border-radius:0;background:var(--duet-wine)}
+.production-calendar .calendar-heading{margin:0 0 12px;min-height:44px}
+.production-calendar .calendar-quick-actions{gap:2px}
+.production-calendar .calendar-schedule-toggle{color:var(--duet-gold);min-height:36px;padding:7px 15px;font-size:16px;font-weight:700}
+.production-calendar .calendar-month-toolbar{max-width:none;margin:0;background:#faf9f7;border-radius:9px 9px 0 0;color:#24201c;padding:5px 12px;font-size:14px}
+.production-calendar .calendar-month-toolbar button{color:var(--duet-wine);font-size:25px;min-height:34px;width:30px;height:34px}
+.production-calendar .calendar-grid{margin:0;padding:0 10px 12px;border:0;border-radius:0 0 9px 9px;background:#faf9f7;gap:1px;grid-template-columns:repeat(7,minmax(0,1fr))}
+.production-calendar .calendar-grid>button{position:relative;justify-self:center;align-self:center;width:36px;height:38px;min-height:38px!important;padding:0;font-size:12px}
+.production-calendar .calendar-grid>button[aria-pressed=true]{background:#080808!important;border-color:transparent!important;color:var(--duet-gold)!important}
+.production-calendar .calendar-grid>button>span{position:absolute;bottom:-2px;left:0;right:0;line-height:8px}
+.production-calendar .calendar-grid>[role=columnheader]{min-height:27px;display:grid;place-items:center;font-size:10px}
+.production-calendar .calendar-schedule-details{background:#080808;border:1px solid var(--duet-rule);border-radius:10px;padding:16px;font-size:13px;overflow-wrap:anywhere}
+.production-calendar .calendar-schedule-details h3,.production-calendar .calendar-schedule-details h4{color:var(--duet-gold)}
+.production-calendar .calendar-schedule-details button,.production-calendar-error button{background:transparent;border:1px solid var(--duet-rule);border-radius:5px;color:var(--duet-gold);padding:7px 9px;min-height:34px;font-size:12px}
+.production-calendar .schedule-agenda{padding:0;border:0;background:transparent}
+.production-calendar-error{font-size:12px;color:#ffe2d9}
+.production-schedule-dialog{position:fixed;inset:0;margin:0 auto;width:min(100%,390px);height:100dvh;max-height:100dvh;max-width:100vw;border:0;border-radius:0;background:#000}
+.production-schedule-dialog .schedule-toolbar{display:grid;grid-template-columns:70px minmax(0,1fr) 70px;gap:3px;background:#000;min-height:72px;padding:10px 12px}
+.production-schedule-dialog .schedule-toolbar h2{text-align:center;color:var(--duet-gold);font:24px/1.2 Georgia,serif}
+.production-schedule-dialog .schedule-toolbar button{font-size:13px;padding:7px;min-width:0}
+.production-schedule-dialog .schedule-toolbar .schedule-add{border-radius:6px;background:var(--duet-wine)}
+.production-schedule-dialog .schedule-body{padding:24px 20px}
+.production-schedule-dialog .schedule-title input{font-size:17px}
+.production-schedule-dialog .schedule-row{font-size:14px;padding:14px 12px;border-bottom:1px solid var(--duet-rule)}
+.production-schedule-dialog .schedule-row:last-child{border-bottom:0}
+.production-schedule-dialog .schedule-row-value{font-size:12px;gap:5px;line-height:1.6}
+.production-schedule-dialog .schedule-note textarea{min-height:130px}
+.schedule-picker-shade{position:fixed;inset:0;display:grid;place-items:center;background:#0009;z-index:4;padding:16px}
+.schedule-compact-picker{width:max-content;max-width:calc(100vw - 32px);padding:18px 15px 12px;border:1px solid #6b5434;border-radius:14px;background:#15110e;color:var(--duet-gold);box-shadow:0 16px 60px #000b;text-align:center}
+.schedule-compact-picker h3{font:20px Georgia,serif;margin:0 0 8px;color:var(--duet-gold)}
+.schedule-compact-picker>p{font-size:12px;margin:0 0 16px;color:var(--duet-muted)}
+.schedule-picker-modes{display:flex;justify-content:center;gap:6px;margin-bottom:14px}
+.schedule-compact-picker button{min-height:34px;padding:6px 14px;background:transparent;border:1px solid var(--duet-rule);border-radius:6px;color:var(--duet-gold);font-size:12px}
+.schedule-picker-modes button[aria-pressed=true]{background:var(--duet-wine);border-color:var(--duet-gold)}
+.schedule-picker-wheels{display:flex;align-items:center;justify-content:center;gap:5px;padding:10px 0}
+.schedule-picker-wheels select{width:auto;min-width:3.8ch;max-width:8ch;margin:0;padding:0 .6ch;border:0;background:transparent;color:#f1e5d5;font-size:17px;text-align:center;scrollbar-width:none;overflow-y:auto;border-radius:5px}
+.schedule-picker-wheels select[aria-label=Year]{min-width:6ch}
+.schedule-picker-wheels option{padding:9px .2ch;background:#15110e}
+.schedule-picker-wheels option:checked{color:var(--duet-gold);background:#34281b}
+.schedule-picker-actions{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--duet-rule);padding-top:12px;margin-top:10px}
+.schedule-picker-actions button{border:0}
+.production-date-planner{display:flex;flex-direction:column;gap:18px;padding:4px 2px;font-size:14px}
+.production-date-planner .date-proposal-form{order:-1}
+.production-date-planner .date-proposal-form>summary{display:none}
+.production-date-planner .date-preferences{border:1px solid var(--duet-rule);border-radius:8px;padding:14px}
+.production-date-planner label{display:grid;gap:9px;color:var(--duet-gold)}
+.production-date-planner textarea,.production-date-planner input:not([type=checkbox]),.production-date-planner select{width:100%;min-width:0;padding:12px;border:1px solid var(--duet-rule);border-radius:7px;background:#171412;color:#f7f3ed}
+.production-date-planner textarea{min-height:110px;line-height:1.6}
+.production-date-planner button{min-height:40px;border:1px solid var(--duet-rule);border-radius:6px;padding:9px 14px;color:var(--duet-gold);background:transparent}
+.production-date-planner h3,.production-date-planner h4{color:var(--duet-gold);font-family:Georgia,serif;font-weight:400;margin:8px 0}
+.production-pets{position:relative;margin:0 16px;padding:6px 10px 8px;border:1px solid var(--duet-rule);border-radius:14px;background:#070706}
+.production-pets:before{content:'';position:absolute;top:-9px;left:0;right:0;height:1px;background:#d6a67a}
+.production-pets .home-pets{padding:0;position:relative}
+.production-pets .pet-pair{width:100%;height:206px;position:relative;display:block;overflow:hidden}
+.production-pets .pet-sofa{top:auto;bottom:-61px;left:0;width:100%;height:auto;aspect-ratio:1}
+.production-pets .pet-column{position:absolute;bottom:13px;display:block;padding:0;border:0;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.production-pets .pet-column[data-kind=cat]{left:9.5%;width:42%;height:166px}
+.production-pets .pet-column[data-kind=dog]{right:6.5%;width:44%;height:176px}
+.production-pets .pet-column .home-pet-art{width:100%;height:100%;max-width:none;margin:0}
+.production-pets .pet-column svg{pointer-events:none}
+.production-pet-inspector{position:absolute;z-index:5;bottom:100%;left:50%;transform:translateX(-50%);width:190px;padding:12px;background:#14100c;border:1px solid #6b5434;border-radius:12px;box-shadow:0 8px 28px #0006;font-size:12px}
+.production-pets .production-pet-inspector .pet-status{width:100%;height:auto;min-height:44px;background:transparent;border:0;padding:2px 10px}
+.production-pets .production-pet-inspector>p:empty{display:none}
+.production-pets .production-pet-dismiss{position:absolute;top:-10px;right:-10px;border-radius:50%;width:26px;height:26px;min-height:26px;padding:0;background:#14100c}
+.production-pet-status-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.production-pets .production-pet-status-list .pet-status{width:100%;height:auto;min-height:58px;padding:8px 4px}
+@media(max-width:350px){.production-pets .pet-pair{height:177px}.production-pets .pet-column[data-kind=cat]{height:143px}.production-pets .pet-column[data-kind=dog]{height:153px}.production-pets .pet-sofa{bottom:-53px}.production-music{padding:18px 16px}.production-calendar{padding-inline:12px}}
+@media(prefers-reduced-motion:reduce){.production-vinyl{animation:none}.production-tonearm{transition:none}}

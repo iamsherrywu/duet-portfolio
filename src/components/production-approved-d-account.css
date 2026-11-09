@@ -1,0 +1,70 @@
+/* D02/D04/D05/D07/D08: rendered approved export, 3 November 2026.
+   DEF secondary pages intentionally keep Back only, without a primary tab bar. */
+.approved-d-eyebrow{font-size:10px;line-height:1.45;letter-spacing:.16em;color:#c5a46d;margin:0 0 15px}
+.approved-d-muted{color:#aa9b87;font-size:12px;line-height:1.5;margin:0 0 16px}
+.approved-d-panel{padding:14px;border:1px solid #403322;border-radius:11px;background:#14110e;min-width:0}
+.approved-d-panel>p:not(.approved-d-eyebrow){font-size:12px;line-height:1.5;margin:0 0 12px}
+.approved-d-panel small{font-size:11px;color:#aa9b87;line-height:1.45}
+.duet-production-shell.is-subpage .shell-page-body button.approved-d-primary{min-height:46px;padding:9px 14px;border:1px solid #a77c3d;border-radius:8px;background:#8b0000;color:#fff;font-size:13px}
+.duet-production-shell.is-subpage .shell-page-body button.approved-d-text-button{padding:6px 0;min-height:32px;border:0;background:transparent;color:#c5a46d;font-size:12px;text-align:left}
+.approved-d-message{color:#c5a46d;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.approved-d-user-text{white-space:pre-wrap;overflow-wrap:anywhere}
+.approved-d-inbox{min-width:0}
+.approved-d-segmented{display:flex;gap:7px;margin:4px 0 14px}
+.duet-production-shell.is-subpage .shell-page-body .approved-d-segmented>button{padding:7px 12px;min-height:32px;border:1px solid #403322;border-radius:18px;background:#100d0a;color:#cdb98f;font-size:11px;white-space:nowrap}
+.duet-production-shell.is-subpage .shell-page-body .approved-d-segmented>button[aria-pressed=true]{border-color:#c5a46d;background:#231a10;color:#f4d59a}
+.approved-d-segmented i{display:inline-grid;place-items:center;min-width:17px;height:17px;padding:0 3px;margin-left:3px;background:#8b0000;border-radius:50%;font-style:normal}
+.approved-d-inbox-list{display:grid;border-top:1px solid #403322}
+.duet-production-shell.is-subpage .shell-page-body .approved-d-inbox button.approved-d-inbox-item{width:100%;display:flex;align-items:center;gap:11px;padding:13px 2px;text-align:left;background:transparent;border:0;border-bottom:1px solid #33291e;border-radius:0;min-width:0}
+.approved-d-inbox-icon{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;border-radius:10px;background:#21180f;color:#c5a46d;font-size:20px}
+.approved-d-inbox-item>span:nth-child(2){flex:1;min-width:0;display:grid;gap:3px;overflow-wrap:anywhere}
+.approved-d-inbox-item b,.approved-d-archive-item b{color:#f4eee5;font-size:13px;font-weight:500}
+.approved-d-inbox-item small,.approved-d-archive-item small{color:#aa9b87;font-size:11px;line-height:1.45}
+.approved-d-unread-dot{width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:#8b0000}
+.approved-d-inbox-detail{margin-top:18px;padding:13px;border-radius:10px;background:#11100e;overflow-wrap:anywhere}
+.approved-d-inbox-detail>b{display:block;color:#f4eee5;font-size:13px;font-weight:500}
+.approved-d-inbox-detail p:not(.approved-d-eyebrow){font-size:12px;line-height:1.6;color:#ddd2c4}
+.approved-d-refresh{margin-top:12px}
+.approved-d-archive{display:grid;min-width:0}
+.duet-production-shell.is-subpage .shell-page-body .approved-d-archive button.approved-d-archive-item{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:14px 0;border:0;border-bottom:1px solid #403322;border-radius:0;background:transparent}
+.approved-d-archive-date{flex:0 0 44px;color:#c5a46d;font-size:10px;letter-spacing:.08em}
+.approved-d-archive-item>span:nth-child(2){flex:1;min-width:0;display:grid;gap:4px;overflow-wrap:anywhere}
+.approved-d-archive-item>span:last-child{flex:none;font-size:22px;color:#c5a46d}
+.approved-d-archive-result{margin-top:18px}
+.approved-d-archive-result h3{font:19px/1.35 Georgia,serif;color:#c5a46d;margin:4px 0 9px;overflow-wrap:anywhere}
+.approved-d-archive-result .approved-d-eyebrow{font-size:10px;line-height:1.45;margin-bottom:15px}
+.approved-d-archive-result>p:not(.approved-d-eyebrow){font-size:12px;color:#ded3c5;margin:7px 0}
+.approved-d-archive-excerpt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;white-space:pre-wrap;overflow-wrap:anywhere}
+.production-court-archive-back{display:inline-flex;align-items:center;gap:6px;align-self:flex-start}
+.production-court-archive-back svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.approved-d-account{display:flex;flex:1;flex-direction:column;min-width:0}
+.duet-production-shell .shell-page-body .approved-d-account>h2,.duet-production-shell.is-subpage .shell-page-body button.approved-d-account-options>h2,.duet-production-shell .shell-page-body .approved-d-feedback>h2{font:26px/1.2 Georgia,serif;font-weight:400;color:#f4eee5;margin:3px 0 16px}
+.approved-d-invite-link{display:flex;align-items:center;gap:5px;min-width:0;padding:7px;border:1px solid #443521;border-radius:7px;background:#080706;margin:9px 0}
+.duet-production-shell .approved-d-invite-link>input{flex:1;width:0;min-width:0;min-height:32px;padding:7px;border:0;background:transparent;font-size:11px}
+.duet-production-shell.is-subpage .shell-page-body .approved-d-invite-link>button{flex:none;padding:6px 9px;min-height:32px;border:1px solid #c5a46d;border-radius:6px;background:transparent;font-size:10px}
+.duet-production-shell.is-subpage .shell-page-body button.approved-d-account-option{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:16px 0 30px;padding:14px;border:1px solid #403322;border-radius:9px;color:#c5a46d;background:transparent;font-size:12px;text-align:left}
+.approved-d-account-option>span{font-size:20px;flex:none}
+.approved-d-account-footer{margin:30px -18px -32px;margin-top:auto;padding:20px 18px max(18px,env(safe-area-inset-bottom));border-top:1px solid #2d241a}
+.approved-d-account-footer>button{width:100%}
+.approved-d-account-option+.approved-d-account-footer{padding-top:14px}
+.approved-d-account-options{min-width:0}
+.approved-d-warning-card{display:flex;gap:10px;padding:14px;margin:16px 0;border:1px solid #7d3028;border-radius:10px;background:#21100e;min-width:0}
+.approved-d-warning-card>span{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:50%;background:#6e1a15;color:#f0c28e;font-weight:700}
+.approved-d-warning-card>div{min-width:0;flex:1;display:grid;gap:5px;overflow-wrap:anywhere}
+.approved-d-warning-card b{font-size:13px;color:#f4eee5}
+.approved-d-warning-card small{font-size:11px;line-height:1.45;color:#c2ab98}
+.duet-production-shell.is-subpage .shell-page-body button.approved-d-danger-action{justify-self:start;margin-top:9px;padding:8px 10px;min-height:34px;border:1px solid #a94b3e;border-radius:6px;background:#32100e;color:#efc0ae;font-size:11px}
+.approved-d-close-controls{display:grid;gap:12px;min-width:0;margin-top:12px;font-size:12px;color:#aa9b87}
+.approved-d-close-controls p{margin:0;line-height:1.6}
+.approved-d-close-controls>div{display:grid;gap:12px}
+.approved-d-close-controls label{display:grid;gap:8px;font-size:12px;color:#c5a46d}
+.approved-d-close-controls input{width:100%;min-width:0;min-height:42px;border:1px solid #51412e;border-radius:7px;padding:10px 11px;background:#090807;color:#f4eee5;font-size:14px}
+.approved-d-close-controls button:not(.approved-d-text-button),.duet-production-shell.is-subpage .shell-page-body .approved-d-close-controls button:not(.approved-d-text-button){min-height:40px;padding:9px 12px;border:1px solid #a94b3e;border-radius:8px;background:#4b1110;color:#f4d5c0;font-size:12px}
+.approved-d-close-controls button:disabled{opacity:.5}
+.approved-d-warning-card [role=status],.approved-d-warning-card [role=alert]{font-size:11px;line-height:1.5;color:#e6b78a}
+.approved-d-feedback .shell-feedback{gap:14px}
+.approved-d-feedback .shell-feedback label{font-size:12px;gap:7px;margin:0}
+.approved-d-feedback .shell-feedback textarea{min-height:120px;resize:vertical}
+.approved-d-feedback .shell-feedback input,.approved-d-feedback .shell-feedback select,.approved-d-feedback .shell-feedback textarea{padding:9px 11px;background:#090807;color:#f4eee5;font-size:14px;min-width:0}
+.approved-d-feedback .shell-feedback small{text-align:left;font-size:11px;line-height:1.45}
+@media(max-width:350px){.approved-d-invite-link{flex-wrap:wrap}.duet-production-shell .approved-d-invite-link>input{flex-basis:100%;width:100%}.approved-d-warning-card{padding:12px}.duet-production-shell.is-subpage .shell-page-body .approved-d-archive button.approved-d-archive-item{gap:9px}}
