@@ -8,7 +8,7 @@ DUET 是为两个人设计的私密陪伴应用。它把音乐分享变成等待
 
 | Home | Chat | Calendar | Me |
 | --- | --- | --- | --- |
-| <a href="docs/images/home.png"><img src="docs/images/home.png" alt="Home" width="190" height="385"></a> | <a href="docs/images/chat.png"><img src="docs/images/chat.png" alt="Chat" width="190" height="385"></a> | <a href="docs/images/calendar.png"><img src="docs/images/calendar.png" alt="Calendar" width="190" height="385"></a> | <a href="docs/images/me.png"><img src="docs/images/me.png" alt="Me" width="190" height="385"></a> |
+| <a href="docs/images/home.png"><img src="docs/images/home.png" alt="Home" width="190" height="385"></a> | <a href="docs/images/chat.jpg"><img src="docs/images/chat.jpg" alt="Chat" width="190" height="385"></a> | <a href="docs/images/calendar.jpg"><img src="docs/images/calendar.jpg" alt="Calendar" width="190" height="385"></a> | <a href="docs/images/me.png"><img src="docs/images/me.png" alt="Me" width="190" height="385"></a> |
 | 音乐盲盒与黑胶收藏 | 双人聊天与 Ask Duet | 双方日程、约会和 Story | 资料、宠物与账号设置 |
 
 
