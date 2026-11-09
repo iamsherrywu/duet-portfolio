@@ -33,3 +33,6 @@ uploads/
 
 # Ignore local dependency links as well as directories
 node_modules
+
+# Public blank configuration template
+!.env.example

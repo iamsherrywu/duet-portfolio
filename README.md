@@ -4,7 +4,15 @@
 
 DUET 是为两个人设计的私密陪伴应用。它把音乐分享变成等待拆开的惊喜，让 AI 参与聊天与约会规划，也把日程、快拍和宠物陪伴融入日常。黑色、酒红与金色构成统一界面，黑胶唱片是音乐体验的视觉核心。
 
-## 不只是发一个歌曲链接
+## 四个主页面
+
+| Home | Chat | Calendar | Me |
+| --- | --- | --- | --- |
+| <a href="docs/images/home.png"><img src="docs/images/home.png" alt="Home" width="190" height="385"></a> | <a href="docs/images/chat.png"><img src="docs/images/chat.png" alt="Chat" width="190" height="385"></a> | <a href="docs/images/calendar.png"><img src="docs/images/calendar.png" alt="Calendar" width="190" height="385"></a> | <a href="docs/images/me.png"><img src="docs/images/me.png" alt="Me" width="190" height="385"></a> |
+| 音乐盲盒与黑胶收藏 | 双人聊天与 Ask Duet | 双方日程、约会和 Story | 资料、宠物与账号设置 |
+
+
+## 产品亮点
 
 ### 音乐盲盒 · 用一首歌表达心情
 上传歌曲截图或填写歌名、歌手，识别歌曲信息与专辑封面，加入 Repository 后送给对方。对方拆开惊喜，读到附带的 Note，再把歌曲留在 Collection 黑胶墙里。分享的不只是歌曲，也是一份等待被发现的心意。
@@ -20,14 +28,6 @@ DUET 是为两个人设计的私密陪伴应用。它把音乐分享变成等待
 - **Story 与地图**：分享照片和日常，地图作为位置入口；定位失败仍可发布照片。
 - **宠物陪伴**：一猫一狗，选择品种、名字和心情，共享一个宠物窝。
 - **猫猫法庭**：双方准备并提交陈述后，由 AI 提供中文分析，作为沟通参考。
-
-## 四个主页面
-
-| Home | Chat | Calendar | Me |
-| --- | --- | --- | --- |
-| [![Home](docs/images/home.png)](docs/images/home.png) | [![Chat](docs/images/chat.png)](docs/images/chat.png) | [![Calendar](docs/images/calendar.png)](docs/images/calendar.png) | [![Me](docs/images/me.png)](docs/images/me.png) |
-| 音乐盲盒与黑胶收藏 | 双人聊天与 Ask Duet | 双方日程、约会和 Story | 资料、宠物与账号设置 |
-
 
 ## 开发与文档
 
