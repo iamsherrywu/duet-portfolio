@@ -28,7 +28,6 @@ DUET 是为两个人设计的私密陪伴应用。它把音乐分享变成等待
 | [![Home](docs/images/home.png)](docs/images/home.png) | [![Chat](docs/images/chat.png)](docs/images/chat.png) | [![Calendar](docs/images/calendar.png)](docs/images/calendar.png) | [![Me](docs/images/me.png)](docs/images/me.png) |
 | 音乐盲盒与黑胶收藏 | 双人聊天与 Ask Duet | 双方日程、约会和 Story | 资料、宠物与账号设置 |
 
-以上为 2026 年 11 月 9 日确认的主页面截图，点击图片可查看原图。
 
 ## 开发与文档
 
@@ -48,8 +47,7 @@ npm run check
 - [数据库迁移](supabase/migrations/)
 - [自动化测试](tests/)
 
-本仓库包含已实现功能与历史设计记录；历史记录不等于当前线上状态，测试通过也不代表所有第三方服务和双人手机流程已完成实测。
 
 ## 关于这个仓库
 
-这是 DUET 的公开作品展示版本，从审查后的代码快照独立建立，不包含生产仓库提交历史、真实凭据或用户数据库。截图由项目作者确认用于公开展示。反馈地址为占位符，请部署者自行配置。开发过程中使用 AI 辅助实现，产品需求、交互设计和验收由作者主导。
+这是 DUET 的公开作品展示版本。反馈地址为占位符，请部署者自行配置。开发过程中使用 AI 辅助实现，产品需求、交互设计和验收由作者主导。
